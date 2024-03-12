@@ -1,0 +1,14 @@
+version: '3'
+services:
+  flask:
+    build: ./
+    container_name: api-flask-dev
+    environment:
+      ## Позволяет отслеживать процесс работы приложения в командной строке
+      - PYTHONUNBUFFERED=True                   
+    restart: on-failure
+    volumes:
+      - ./:/api
+    ports:
+      - "5000:5000"
+    command: python run.py

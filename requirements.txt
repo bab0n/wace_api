@@ -1,0 +1,10 @@
+wheel
+flask
+flask-restx
+Flask-JWT-Extended
+flask-cors
+beautifulsoup4
+Flask-SQLAlchemy
+SQLAlchemy
+uwsgi
+pyjwt
